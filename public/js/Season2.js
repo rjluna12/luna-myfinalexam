@@ -8,7 +8,7 @@ setTimeout(function(){
 
 function x(){
 $.ajax({
-	url: "http://www.omdbapi.com/?t=The walking dead season 2"
+	url: "https://www.omdbapi.com/?t=The walking dead season 2"
 }).done(function(res){
 	console.log(res);
 	let html = `
