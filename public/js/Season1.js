@@ -8,14 +8,14 @@ setTimeout(function(){
 
 function x(){
 $.ajax({
-	url: "http://www.omdbapi.com/?t=The walking dead season 1"
+	url: "http://www.omdbapi.com/?i=tt1520211"
 }).done(function(res){
 	console.log(res);
 	let html = `
 	   <center>
 		<h1>${res.Title}</h1>
 		<img src="${res.Poster}"/>
-		<iframe width="560" height="315" src="https://www.youtube.com/embed/HYunfCZr2e8" frameborder="0" allowfullscreen></iframe>
+		<iframe width="200" height="113" src="https://www.youtube.com/embed/HYunfCZr2e8" frameborder="0" allowfullscreen></iframe>
 		<div id="container">
 		<div id="center">
 		<h3>Type: ${res.Type}</h3>
