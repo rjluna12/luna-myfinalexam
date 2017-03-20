@@ -12,10 +12,11 @@ $.ajax({
 }).done(function(res){
 	console.log(res);
 	let html = `
+	<font face="Consolas" color="red" >
 	   <center>
 		<h1>${res.Title}</h1>
 		<img src="${res.Poster}"/>
-		<iframe width="200" height="113" src="https://www.youtube.com/embed/HYunfCZr2e8" frameborder="0" allowfullscreen></iframe>
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/HYunfCZr2e8" frameborder="0" allowfullscreen></iframe>
 		<div id="container">
 		<div id="center">
 		<h3>Type: ${res.Type}</h3>
